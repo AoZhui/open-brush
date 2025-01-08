@@ -457,11 +457,6 @@ namespace TiltBrush
             }
         }
 
-        public void ShowController(bool show, int index)
-        {
-            m_ControllerInfos[index].ShowController(m_ControllerInfos[index].IsTrackedObjectValid && show);
-        }
-
         void OnDestroy()
         {
             App.VrSdk.OnNewControllerPosesApplied -= OnControllerPosesApplied;

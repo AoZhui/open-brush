@@ -15,7 +15,6 @@
 using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.InputSystem;
-using System;
 
 namespace TiltBrush
 {
@@ -28,8 +27,6 @@ namespace TiltBrush
         private const float kInputScrollScalar = 0.5f;
 
         private bool isBrush = false;
-
-        private StylusInputs stylusState => VrStylusHandler.m_Instance.CurrentState;
 
         private string actionMap
         {
@@ -131,11 +128,6 @@ namespace TiltBrush
             }
         }
 
-        private bool IsStylusActive()
-        {
-            return stylusState.isActive && isBrush;
-        }
-
         public override Vector2 GetPadValueDelta()
         {
             var action = FindAction("ThumbAxis");
@@ -183,12 +175,6 @@ namespace TiltBrush
 
         public override float GetGripValue()
         {
-#if OCULUS_SUPPORTED
-            if (IsStylusActive())
-            {
-                return stylusState.cluster_front_value ? 1.0f : 0;
-            }
-#endif
             return FindAction("GripAxis").ReadValue<float>();
         }
 
@@ -199,12 +185,6 @@ namespace TiltBrush
 
         public override float GetTriggerValue()
         {
-#if OCULUS_SUPPORTED
-            if (IsStylusActive())
-            {
-                return Math.Max(stylusState.tip_value, stylusState.cluster_middle_value);
-            }
-#endif
             return FindAction("TriggerAxis").ReadValue<float>();
         }
 
@@ -247,24 +227,12 @@ namespace TiltBrush
                 case VrInput.Touchpad:
                     return FindAction("PadButton").IsPressed();
                 case VrInput.Trigger:
-#if OCULUS_SUPPORTED
-                    if (IsStylusActive())
-                        return stylusState.cluster_middle_value > 0.2 || stylusState.tip_value > 0.2;
-#endif
                     return FindAction("TriggerAxis").IsPressed();
                 case VrInput.Grip:
-#if OCULUS_SUPPORTED
-                    if (IsStylusActive())
-                        return stylusState.cluster_front_value;
-#endif
                     return FindAction("GripAxis").IsPressed();
                 case VrInput.Button01:
                 case VrInput.Button04:
                 case VrInput.Button06:
-#if OCULUS_SUPPORTED
-                    if (IsStylusActive())
-                        return stylusState.cluster_back_value;
-#endif
                     return FindAction("PrimaryButton").IsPressed();
                 case VrInput.Button02:
                 case VrInput.Button03:

@@ -20,14 +20,14 @@ namespace TiltBrush
 
     public abstract class BaseTray : UIComponent
     {
-        [SerializeField] protected GameObject m_Mesh;
+        [SerializeField] private GameObject m_Mesh;
         [SerializeField] private Renderer m_Border;
         [SerializeField] private float m_AnimateSpeed;
-        [SerializeField] protected Vector2 m_AnimateRange;
+        [SerializeField] private Vector2 m_AnimateRange;
 
         private UIComponentManager m_UIComponentManager;
         private Coroutine m_AnimationCoroutine;
-        protected bool m_AnimateIn;
+        private bool m_AnimateIn;
         private bool m_AnimateWhenEnabled;
         public BaseTool.ToolType m_ShowOnToolType;
 
@@ -130,27 +130,22 @@ namespace TiltBrush
                 m_ShowOnToolType;
             if (isSelectionTool != m_AnimateIn)
             {
-                DoAnimateIn();
-            }
-        }
+                if (m_AnimationCoroutine != null)
+                {
+                    StopCoroutine(m_AnimationCoroutine);
+                }
+                m_AnimateIn = !m_AnimateIn;
 
-        public void DoAnimateIn()
-        {
-            if (m_AnimationCoroutine != null)
-            {
-                StopCoroutine(m_AnimationCoroutine);
-            }
-            m_AnimateIn = !m_AnimateIn;
-
-            // If we get a callback that our tool changed while we're inactive, don't try to
-            // start our coroutine until we've been enabled.
-            if (isActiveAndEnabled)
-            {
-                m_AnimationCoroutine = StartCoroutine(Animate());
-            }
-            else
-            {
-                m_AnimateWhenEnabled = true;
+                // If we get a callback that our tool changed while we're inactive, don't try to
+                // start our coroutine until we've been enabled.
+                if (isActiveAndEnabled)
+                {
+                    m_AnimationCoroutine = StartCoroutine(Animate());
+                }
+                else
+                {
+                    m_AnimateWhenEnabled = true;
+                }
             }
         }
 
