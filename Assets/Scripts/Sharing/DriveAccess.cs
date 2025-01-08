@@ -120,15 +120,7 @@ namespace TiltBrush
                     Debug.LogError("Host id not implemented for iOS");
                     return "iOS-unknown";
                 default:
-                    try
-                    {
-                        return GetPcId();
-                    }
-                    catch (Exception e)
-                    {
-                        // We suspect wmic.xe can cause an exception on some systems, so we catch it here.
-                        return "PC-unknown";
-                    }
+                    return GetPcId();
             }
         }
 
