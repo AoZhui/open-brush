@@ -23,13 +23,13 @@ using System;
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
-using OpenBrush.Multiplayer;
 
 namespace TiltBrush
 {
 
     public class LightingPopUpWindow : PagingPopUpWindow
     {
+        private const string PASSTHROUGH_GUID = "e38af599-4575-46ff-a040-459703dbcd36";
 
         private string m_CurrentPresetGuid;
         [SerializeField] private Transform m_PassthroughControls;
@@ -64,11 +64,17 @@ namespace TiltBrush
 
             // Remove passthrough scene for devices that don't support it
 #if !PASSTHROUGH_SUPPORTED
-            RemovePassthrough();
-#else // PASSTHROUGH_SUPPORTED
-            // Remove passthrough if multiplayer connected
-            if (MultiplayerManager.m_Instance.State == ConnectionState.IN_ROOM) RemovePassthrough();
-#endif
+            foreach (var env in m_Environments)
+            {
+                // Passthrough
+                if (env.m_Guid.ToString() == PASSTHROUGH_GUID)
+                {
+                    m_Environments.Remove(env);
+                    break;
+                }
+            }
+#endif // PASSTHROUGH_SUPPORTED
+
             //find the active lighting preset
             TiltBrush.Environment rCurrentPreset = SceneSettings.m_Instance.GetDesiredPreset();
             if (rCurrentPreset != null)
@@ -100,18 +106,6 @@ namespace TiltBrush
             base.Init(rParent, sText);
         }
 
-        public void RemovePassthrough()
-        {
-            foreach (var env in m_Environments)
-            {
-                if (env.isPassthrough)
-                {
-                    m_Environments.Remove(env);
-                    break;
-                }
-            }
-        }
-
         public void HandleCanvasLockToggle()
         {
             SketchControlsScript.m_Instance.m_DisableWorldGrabbing = m_WorldLockToggle.IsToggledOn;
@@ -125,7 +119,8 @@ namespace TiltBrush
         override protected void RefreshPage()
         {
             base.RefreshPage();
-            if (isPassThroughActive())
+            bool passthroughActive = m_CurrentPresetGuid == PASSTHROUGH_GUID;
+            if (passthroughActive)
             {
                 m_PassthroughControls.gameObject.SetActive(true);
             }
@@ -141,7 +136,8 @@ namespace TiltBrush
             if (rCurrentPreset != null)
             {
                 m_CurrentPresetGuid = rCurrentPreset.m_Guid.ToString();
-                if (isPassThroughActive())
+                bool passthroughActive = m_CurrentPresetGuid == PASSTHROUGH_GUID;
+                if (passthroughActive)
                 {
                     m_PassthroughControls.gameObject.SetActive(true);
                     m_WorldLockToggle.IsToggledOn = true;
@@ -157,15 +153,9 @@ namespace TiltBrush
             RefreshPage();
         }
 
-        private bool isPassThroughActive()
-        {
-            return m_Environments.Any(env => env.isPassthrough && env.m_Guid.ToString() == m_CurrentPresetGuid);
-        }
-
         void OnDestroy()
         {
             SceneSettings.m_Instance.FadingToDesiredEnvironment -= OnFadingToDesiredEnvironment;
         }
-
     }
 } // namespace TiltBrush

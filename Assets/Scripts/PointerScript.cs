@@ -933,8 +933,7 @@ namespace TiltBrush
         public void DetachLine(
             bool bDiscard,
             Stroke rMemoryObjectForPlayback,
-            SketchMemoryScript.StrokeFlags strokeFlags = SketchMemoryScript.StrokeFlags.None,
-            bool isFinalStroke = false)
+            SketchMemoryScript.StrokeFlags strokeFlags = SketchMemoryScript.StrokeFlags.None)
         {
 
             if (rMemoryObjectForPlayback != null)
@@ -1002,11 +1001,7 @@ namespace TiltBrush
                         m_CurrentBrushSize,
                         m_CurrentLine.StrokeScale,
                         m_ControlPoints, strokeFlags,
-                        WidgetManager.m_Instance.ActiveStencil,
-                        m_LineLength_CS,
-                        m_CurrentLine.RandomSeed,
-                        isFinalStroke
-                        );
+                        WidgetManager.m_Instance.ActiveStencil, m_LineLength_CS, m_CurrentLine.RandomSeed);
                 }
                 else
                 {

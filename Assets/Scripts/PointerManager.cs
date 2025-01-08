@@ -398,12 +398,6 @@ namespace TiltBrush
             return script;
         }
 
-        public void RemoveRemotePointer(PointerScript pointer)
-        {
-            m_RemoteUserPointers.Remove(pointer);
-            Destroy(pointer.gameObject);
-        }
-
         /// The brush size, using "normalized" values in the range [0,1].
         /// Guaranteed to be in [0,1].
         public float GetPointerBrushSize01(InputManager.ControllerName controller)
@@ -1544,7 +1538,6 @@ namespace TiltBrush
                     }
                     else
                     {
-
                         SketchMemoryScript.StrokeFlags flags = SketchMemoryScript.StrokeFlags.None;
                         if (groupStart == null)
                         {
@@ -1558,10 +1551,7 @@ namespace TiltBrush
                             // Verify IsGroupContinue invariant
                             Debug.Assert(pointer.TimestampMs == groupStartTime);
                         }
-
-                        // Set isFinalStroke to true only for the last pointer to ensure command chain invokes once all strokes are chained
-                        bool isFinalStroke = (i == m_NumActivePointers - 1);
-                        pointer.DetachLine(bDiscardLine, null, flags, isFinalStroke);
+                        pointer.DetachLine(bDiscardLine, null, flags);
                     }
                 }
             }

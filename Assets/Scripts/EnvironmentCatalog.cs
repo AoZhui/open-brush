@@ -107,7 +107,7 @@ namespace TiltBrush
 
         static void LoadEnvironmentsInManifest(List<Environment> output)
         {
-            var manifest = App.Instance.ManifestFull;
+            var manifest = App.Instance.m_Manifest;
             foreach (var asset in manifest.Environments)
             {
                 if (asset != null)

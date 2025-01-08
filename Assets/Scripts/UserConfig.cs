@@ -232,7 +232,14 @@ namespace TiltBrush
                 {
                     if (m_IncludeTags == null)
                     {
-                        m_IncludeTags = new[] { "default", "experimental" };
+                        if (App.Config.GetIsExperimental())
+                        {
+                            m_IncludeTags = new[] { "default", "experimental" };
+                        }
+                        else
+                        {
+                            m_IncludeTags = new[] { "default" };
+                        }
                     }
                     return m_IncludeTags;
                 }
@@ -543,33 +550,36 @@ namespace TiltBrush
                 get
                 {
                     Dictionary<Guid, Guid> results = new Dictionary<Guid, Guid>();
-                    if (string.IsNullOrEmpty(BrushReplacements))
+                    if (Config.IsExperimental)
                     {
-                        return results;
-                    }
-                    var replacements = BrushReplacements.Split(',');
-                    foreach (string replacement in replacements)
-                    {
-                        string[] pair = replacement.Split('=');
-                        if (pair.Length == 2)
+                        if (string.IsNullOrEmpty(BrushReplacements))
                         {
-                            if (pair[0] == "*")
+                            return results;
+                        }
+                        var replacements = BrushReplacements.Split(',');
+                        foreach (string replacement in replacements)
+                        {
+                            string[] pair = replacement.Split('=');
+                            if (pair.Length == 2)
                             {
-                                Guid guid = new Guid(pair[1]);
-                                foreach (var brush in App.Instance.ManifestFull.Brushes)
+                                if (pair[0] == "*")
                                 {
-                                    results.Add(brush.m_Guid, guid);
+                                    Guid guid = new Guid(pair[1]);
+                                    foreach (var brush in App.Instance.m_Manifest.Brushes)
+                                    {
+                                        results.Add(brush.m_Guid, guid);
+                                    }
+                                }
+                                else
+                                {
+                                    results.Add(new Guid(pair[0]), new Guid(pair[1]));
                                 }
                             }
                             else
                             {
-                                results.Add(new Guid(pair[0]), new Guid(pair[1]));
+                                OutputWindowScript.Error("BrushReplacement should be of the form:\n" +
+                                    "brushguidA=brushguidB,brushguidC=brushguidD");
                             }
-                        }
-                        else
-                        {
-                            OutputWindowScript.Error("BrushReplacement should be of the form:\n" +
-                                "brushguidA=brushguidB,brushguidC=brushguidD");
                         }
                     }
                     return results;

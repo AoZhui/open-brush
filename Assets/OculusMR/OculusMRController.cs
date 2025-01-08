@@ -57,19 +57,11 @@ namespace TiltBrush
             {
                 await m_SpatialAnchorManager.CreateSpatialAnchor();
                 m_SpatialAnchorManager.SceneLocalizeToAnchor();
-                MultiplayerManager.m_Instance.JoinRoom(new RoomCreateData()
-                {
-                    roomName = "OculusMRRoom",
-                    maxPlayers = 12
-                });
+                MultiplayerManager.m_Instance.Connect();
             }
             else
             {
-                MultiplayerManager.m_Instance.JoinRoom(new RoomCreateData()
-                {
-                    roomName = "OculusMRRoom",
-                    maxPlayers = 12
-                });
+                MultiplayerManager.m_Instance.Connect();
             }
         }
 

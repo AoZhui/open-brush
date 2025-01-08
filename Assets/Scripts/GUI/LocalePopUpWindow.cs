@@ -47,7 +47,7 @@ namespace TiltBrush
             //build list of locale presets we're going to show
             Locale currentSelectedLocale = LocalizationSettings.SelectedLocale;
 
-            m_Locales = App.Instance.ManifestFull.Locales;
+            m_Locales = App.Instance.m_Manifest.Locales;
 
             int iPresetIndex = -1;
             m_CurrentPresetIdCode = currentSelectedLocale.Identifier.Code;

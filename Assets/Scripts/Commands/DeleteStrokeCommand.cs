@@ -12,8 +12,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
-using UnityEditor;
 using UnityEngine;
 
 namespace TiltBrush
@@ -30,13 +28,6 @@ namespace TiltBrush
 
         public DeleteStrokeCommand(Stroke stroke, BaseCommand parent = null)
             : base(parent)
-        {
-            m_TargetStroke = stroke;
-            m_SilenceFirstAudio = true;
-        }
-
-        public DeleteStrokeCommand(Stroke stroke, Guid existingGuid, int timestamp, BaseCommand parent = null)
-            : base(existingGuid, timestamp, parent)
         {
             m_TargetStroke = stroke;
             m_SilenceFirstAudio = true;
