@@ -1141,7 +1141,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191090}
-  m_Text: Try tossing this cube
+  m_Text: "\u8BD5\u7740\u6254\u8FD9\u4E2A\u7ACB\u65B9\u4F53"
   m_OffsetZ: 0
   m_CharacterSize: 0.06
   m_LineSpacing: 1
@@ -1232,7 +1232,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 193730}
-  m_Text: Toss Objects to Dismiss
+  m_Text: "\u628A\u7269\u4F53\u629B\u5230\u4E00\u8FB9"
   m_OffsetZ: 0
   m_CharacterSize: 0.07
   m_LineSpacing: 1
