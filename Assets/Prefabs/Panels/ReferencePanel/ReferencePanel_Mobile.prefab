@@ -92,16 +92,12 @@ PrefabInstance:
     - target: {fileID: 584625050532430736, guid: 0053ac08708148641bd0b629e8e3e2e5,
         type: 3}
       propertyPath: m_text
-      value: Learn How
+      value: "\u4E86\u89E3\u66F4\u591A"
       objectReference: {fileID: 0}
     - target: {fileID: 904101876321322130, guid: 0053ac08708148641bd0b629e8e3e2e5,
         type: 3}
       propertyPath: m_text
-      value: 'Add images to
-
-        your Device to
-
-        see them here'
+      value: "\u5C06\u56FE\u50CF\u6DFB\u52A0\u5230\n\u4F60\u7684\u8BBE\u5907\n\u5728\u8FD9\u91CC\u67E5\u770B"
       objectReference: {fileID: 0}
     - target: {fileID: 1346993258973891057, guid: 0053ac08708148641bd0b629e8e3e2e5,
         type: 3}
