@@ -351,9 +351,24 @@ namespace TiltBrush
                 settings = settingLevels[value];
             }
 
-            SetBloomMode(settings.Bloom);
-            EnableHDR(settings.Hdr);
-            EnableFxaa(settings.Fxaa);
+            #region Origin 
+            //SetBloomMode(settings.Bloom);
+            //EnableHDR(settings.Hdr);
+            //EnableFxaa(settings.Fxaa);
+            #endregion
+
+            #region Change
+            //MYT - 修复质量为1,会白屏
+            if (value != 1)
+            {
+                SetBloomMode(settings.Bloom);
+                EnableHDR(settings.Hdr);
+                EnableFxaa(settings.Fxaa);
+            }
+            #endregion
+
+
+
             Shader.globalMaximumLOD = settings.MaxLod;
             m_msaaLevel = settings.MsaaLevel;
             QualitySettings.anisotropicFiltering = settings.Anisotropic;
