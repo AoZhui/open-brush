@@ -1683,8 +1683,8 @@ static class BuildTiltBrush
                 m_buildStatus = buildDesc;
 
                 //MYT Set ProjectName and Package
-                PlayerSettings.productName = "linglongbi";
-                PlayerSettings.SetApplicationIdentifier(BuildTargetGroup.Android, "foundation.icosa.linglongbi");
+                PlayerSettings.productName = "Ááçç±Ê";
+                PlayerSettings.SetApplicationIdentifier(BuildTargetGroup.Android, "hu.san.linglongbi");
 
                 // Start building
                 var thing = BuildPipeline.BuildPlayer(scenes, location, target, options);
