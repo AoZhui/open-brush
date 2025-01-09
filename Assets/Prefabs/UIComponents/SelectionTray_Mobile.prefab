@@ -835,7 +835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DescriptionType: 0
   m_DescriptionYOffset: 0
-  m_DescriptionText: Repaint Selected
+  m_DescriptionText: "\u91CD\u65B0\u7ED8\u753B\u9009\u62E9"
   m_LocalizedDescription:
     m_TableReference:
       m_TableCollectionName: 
