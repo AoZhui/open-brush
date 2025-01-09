@@ -796,9 +796,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 183852}
-  m_Text: 'Grip then Press A Button
-
-    to Reset Your Size'
+  m_Text: "\u63E1\u7D27\u7136\u540E\u6309\u4E0B\u6309\u94AE\n\u91CD\u7F6E\u4F60\u7684\u5C3A\u5BF8"
   m_OffsetZ: 0
   m_CharacterSize: 0.07
   m_LineSpacing: 1
