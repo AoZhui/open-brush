@@ -321,7 +321,7 @@ MonoBehaviour:
     m_Command: 18
   - m_PopUpPrefab: {fileID: 197348, guid: d6d515da978a4db419b15f960d57d718, type: 3}
     m_Command: 31
-  m_PanelDescription: Webcam
+  m_PanelDescription: "\u7F51\u7EDC\u6444\u50CF\u5934"
   m_LocalizedPanelDescription:
     m_TableReference:
       m_TableCollectionName: 

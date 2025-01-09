@@ -1249,11 +1249,11 @@ MonoBehaviour:
   m_RotationSpeedMultiplier: 14.3
   m_Command: 0
   m_Options:
-  - m_Description: Left/Bottom/Front edges
+  - m_Description: "\u5DE6/\u5E95/\u524D\u9762 \u8FB9\u7F18"
     m_Texture: {fileID: 2800000, guid: 8778debf9ce9b944a87c44b3bc25528d, type: 3}
-  - m_Description: Centers
+  - m_Description: "\u4E2D\u5FC3"
     m_Texture: {fileID: 2800000, guid: 3e82f99933f5224418f9f9086465ec89, type: 3}
-  - m_Description: Right/Top/Back edges
+  - m_Description: "\u524D/\u4E0A/\u53F3 \u8FB9\u7F18"
     m_Texture: {fileID: 2800000, guid: 890a7791a42dc4a43ad092dd43ee9eec, type: 3}
   DisplayTextLabel: 0
   DisplayIcon: 1

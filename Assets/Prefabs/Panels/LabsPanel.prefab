@@ -2918,7 +2918,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DescriptionType: 0
   m_DescriptionYOffset: 0
-  m_DescriptionText: Save selected strokes to model catalog
+  m_DescriptionText: "\u5C06\u9009\u5B9A\u7B14\u753B\u4FDD\u5B58\u5230\u6A21\u578B\u76EE\u5F55"
   m_LocalizedDescription:
     m_TableReference:
       m_TableCollectionName: 
@@ -2928,7 +2928,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  m_DescriptionTextExtra: Save Model
+  m_DescriptionTextExtra: "\u4FDD\u5B58\u6A21\u578B"
   m_LocalizedDescriptionExtra:
     m_TableReference:
       m_TableCollectionName: 
@@ -3094,7 +3094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DescriptionType: 0
   m_DescriptionYOffset: 0
-  m_DescriptionText: Drafting Lines
+  m_DescriptionText: "\u8D77\u8349\u884C"
   m_LocalizedDescription:
     m_TableReference:
       m_TableCollectionName: 
@@ -3104,7 +3104,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  m_DescriptionTextExtra: 
+  m_DescriptionTextExtra: "\u9762\u677F"
   m_LocalizedDescriptionExtra:
     m_TableReference:
       m_TableCollectionName: 

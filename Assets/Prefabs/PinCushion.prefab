@@ -918,7 +918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61229494e70c3e24cbad9ed75c03efed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ToolName: Eraser
+  m_ToolName: "\u6A61\u76AE\u64E6"
   m_PanelText: {fileID: 114000011486538170}
   m_Icon: {fileID: 2800000, guid: 567e825788c120d499fb56ab4ce674f1, type: 3}
   m_Tool: 11
@@ -1066,7 +1066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61229494e70c3e24cbad9ed75c03efed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ToolName: Dropper
+  m_ToolName: "\u6EF4\u7BA1"
   m_PanelText: {fileID: 114000011486538170}
   m_Icon: {fileID: 2800000, guid: 913e28ee98ec4614c972c618f3ce9990, type: 3}
   m_Tool: 13
@@ -1170,7 +1170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61229494e70c3e24cbad9ed75c03efed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ToolName: Repaint
+  m_ToolName: "\u91CD\u7ED8"
   m_PanelText: {fileID: 114000011486538170}
   m_Icon: {fileID: 2800000, guid: c8bb11ef9a13cb3448850cdb0421bb64, type: 3}
   m_Tool: 19
@@ -1517,7 +1517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61229494e70c3e24cbad9ed75c03efed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ToolName: Selection
+  m_ToolName: "\u9009\u62E9"
   m_PanelText: {fileID: 114000011486538170}
   m_Icon: {fileID: 2800000, guid: 6d83ff48989734a4fb3ac917bd3ba13f, type: 3}
   m_Tool: 21

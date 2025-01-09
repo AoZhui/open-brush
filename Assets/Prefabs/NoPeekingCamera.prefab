@@ -153,7 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Heading: {fileID: 2983092942286120586}
   m_SketchLoadingUi: {fileID: 286790923345576475}
-  m_NonXRHelpURL: https://docs.openbrush.app/user-guide/monoscopic-mode
+  m_NonXRHelpURL: https://hsxmeta.cn
 --- !u!1 &140238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1084,7 +1084,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'More info on using Open Brush without VR:'
+  m_text: "\u5173\u4E8E\u4E0D\u4F7F\u7528 VR \u4F7F\u7528 \u73B2\u73D1\u7B14 \u7684\u66F4\u591A\u4FE1\u606F"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fce54057bad3d2d4cb3c36ee394be518, type: 2}
   m_sharedMaterial: {fileID: 2133298, guid: fce54057bad3d2d4cb3c36ee394be518, type: 2}
@@ -2323,7 +2323,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Failed to detect VR
+  m_text: "\u672A\u80FD\u68C0\u6D4B\u5230 VR"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fce54057bad3d2d4cb3c36ee394be518, type: 2}
   m_sharedMaterial: {fileID: 2133298, guid: fce54057bad3d2d4cb3c36ee394be518, type: 2}
@@ -2501,7 +2501,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: View Sketch
+  m_text: "\u67E5\u770B\u8349\u56FE"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fce54057bad3d2d4cb3c36ee394be518, type: 2}
   m_sharedMaterial: {fileID: 2133298, guid: fce54057bad3d2d4cb3c36ee394be518, type: 2}
@@ -2713,10 +2713,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "You can continue without a VR headset. Choose a sketch below to enter
-    Viewing Mode with the following controls:\n\nMouse: look around (press I to invert
-    up/down) \nW,A,S,D: move forward/back/left/right\nQ,E: move up/down\nHold shift
-    to move faster"
+  m_text: "\u60A8\u53EF\u4EE5\u7EE7\u7EED\uFF0C\u65E0\u9700 VR \u5934\u76D4\u3002\u9009\u62E9\u4E0B\u9762\u7684\u8349\u56FE\u8FDB\u5165\u67E5\u770B\u6A21\u5F0F\uFF0C\u63A7\u5236\u65B9\u5F0F\u5982\u4E0B\uFF1A\n\n\u9F20\u6807\uFF1A\u56DB\u5904\u770B\u770B\uFF08\u6309
+    I \u952E\u4EE5\u53CD\u8F6C\u4E0A/\u4E0B\uFF09\nW,A,S,D\uFF1A\u5411\u524D/\u540E/\u5DE6/\u53F3\u79FB\u52A8\nQ,E\uFF1A\u4E0A\u5347/\u4E0B\u964D\n\u6309\u4F4F
+    shift \u952E\u4EE5\u66F4\u5FEB\u79FB\u52A8"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fce54057bad3d2d4cb3c36ee394be518, type: 2}
   m_sharedMaterial: {fileID: 2133298, guid: fce54057bad3d2d4cb3c36ee394be518, type: 2}

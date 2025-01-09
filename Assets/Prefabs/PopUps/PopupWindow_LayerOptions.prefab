@@ -305,7 +305,7 @@ PrefabInstance:
     - target: {fileID: 2258866777187424176, guid: 3044e302be7567d43b7cb6b660b75b41,
         type: 3}
       propertyPath: m_DescriptionTextExtra
-      value: Merge layer with the one below
+      value: "\u4E0E\u4E0B\u9762\u7684\u56FE\u5C42\u5408\u5E76"
       objectReference: {fileID: 0}
     - target: {fileID: 2258866777187424176, guid: 3044e302be7567d43b7cb6b660b75b41,
         type: 3}
@@ -537,7 +537,7 @@ PrefabInstance:
     - target: {fileID: 444151169322757034, guid: 1c86458d1a7525744b384f8816d516f5,
         type: 3}
       propertyPath: m_DescriptionTextExtra
-      value: Deletes layer and contents
+      value: "\u5220\u9664\u56FE\u5C42\u548C\u5185\u5BB9"
       objectReference: {fileID: 0}
     - target: {fileID: 4315672031706450571, guid: 1c86458d1a7525744b384f8816d516f5,
         type: 3}
@@ -642,7 +642,7 @@ PrefabInstance:
     - target: {fileID: 1781126387072998529, guid: 9db6de3a1141ff24ea3a40222f25246f,
         type: 3}
       propertyPath: m_DescriptionTextExtra
-      value: Remove everything on this layer
+      value: "\u5220\u9664\u8BE5\u56FE\u5C42\u4E0A\u7684\u6240\u6709\u5185\u5BB9"
       objectReference: {fileID: 0}
     - target: {fileID: 1781126387072998529, guid: 9db6de3a1141ff24ea3a40222f25246f,
         type: 3}
