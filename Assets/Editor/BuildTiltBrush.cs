@@ -52,7 +52,7 @@ static class BuildTiltBrush
     public const string kVendorReverseDNS = "foundation.icosa";
 
     // Executable Base
-    public const string kGuiBuildExecutableName = "OpenBrush";
+    public const string kGuiBuildExecutableName = "LingLongBi";
     // Windows Executable
     public const string kGuiBuildWindowsExecutableName = kGuiBuildExecutableName + ".exe";
     // Linux Executable
@@ -1681,6 +1681,10 @@ static class BuildTiltBrush
                     buildDesc += $", {PlayerSettings.Android.targetArchitectures}";
                 }
                 m_buildStatus = buildDesc;
+
+                //MYT Set ProjectName and Package
+                PlayerSettings.productName = "linglongbi";
+                PlayerSettings.SetApplicationIdentifier(BuildTargetGroup.Android, "foundation.icosa.linglongbi");
 
                 // Start building
                 var thing = BuildPipeline.BuildPlayer(scenes, location, target, options);
