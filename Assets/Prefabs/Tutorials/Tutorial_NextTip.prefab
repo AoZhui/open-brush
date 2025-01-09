@@ -186,7 +186,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 139012}
-  m_Text: Use Arrows for more...
+  m_Text: "\u4F7F\u7528\u7BAD\u5934\u66F4\u591A\u2026"
   m_OffsetZ: 0
   m_CharacterSize: 0.06
   m_LineSpacing: 1

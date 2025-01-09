@@ -999,9 +999,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 183852}
-  m_Text: 'Use Both Grips on
-
-    Objects to Scale'
+  m_Text: "\u4F7F\u7528\u4E24\u4E2A\u63E1\u628A\n\u7F29\u653E\u5BF9\u8C61"
   m_OffsetZ: 0
   m_CharacterSize: 0.07
   m_LineSpacing: 1

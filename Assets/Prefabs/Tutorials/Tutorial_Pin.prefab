@@ -851,9 +851,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 183852}
-  m_Text: 'Pull Trigger to Pin
-
-'
+  m_Text: "\u6263\u52A8\u6273\u673A"
   m_OffsetZ: 0
   m_CharacterSize: 0.07
   m_LineSpacing: 1

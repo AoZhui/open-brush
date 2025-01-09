@@ -289,7 +289,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 123084}
-  m_Text: Try grabbing this panel
+  m_Text: "\u8BD5\u7740\u6293\u4F4F\u8FD9\u4E2A\u9762\u677F"
   m_OffsetZ: 0
   m_CharacterSize: 0.06
   m_LineSpacing: 1
@@ -1676,7 +1676,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 183852}
-  m_Text: Grip to Grab Objects
+  m_Text: "\u6293\u624B\u6293\u53D6\u5BF9\u8C61"
   m_OffsetZ: 0
   m_CharacterSize: 0.07
   m_LineSpacing: 1
