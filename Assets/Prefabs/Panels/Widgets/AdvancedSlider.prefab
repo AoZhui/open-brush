@@ -619,7 +619,7 @@ PrefabInstance:
     - target: {fileID: 7879899076693153277, guid: 0963942396a615f4fb1b390436e881b8,
         type: 3}
       propertyPath: m_DescriptionText
-      value: Maximum Value
+      value: "\u6700\u5927\u503c"
       objectReference: {fileID: 0}
     - target: {fileID: 7879899076693153277, guid: 0963942396a615f4fb1b390436e881b8,
         type: 3}
@@ -1196,7 +1196,7 @@ PrefabInstance:
     - target: {fileID: 7879899076693153277, guid: 0963942396a615f4fb1b390436e881b8,
         type: 3}
       propertyPath: m_DescriptionText
-      value: Increase
+      value: "\u589e\u52a0"
       objectReference: {fileID: 0}
     - target: {fileID: 7879899076693153277, guid: 0963942396a615f4fb1b390436e881b8,
         type: 3}
@@ -1365,7 +1365,7 @@ PrefabInstance:
     - target: {fileID: 7879899076693153277, guid: 0963942396a615f4fb1b390436e881b8,
         type: 3}
       propertyPath: m_DescriptionText
-      value: Minimum Value
+      value: "\u6700\u5c0f\u503c"
       objectReference: {fileID: 0}
     - target: {fileID: 7879899076693153277, guid: 0963942396a615f4fb1b390436e881b8,
         type: 3}
@@ -1534,7 +1534,7 @@ PrefabInstance:
     - target: {fileID: 7879899076693153277, guid: 0963942396a615f4fb1b390436e881b8,
         type: 3}
       propertyPath: m_DescriptionText
-      value: Decrease
+      value: "\u51cf\u5c11"
       objectReference: {fileID: 0}
     - target: {fileID: 7879899076693153277, guid: 0963942396a615f4fb1b390436e881b8,
         type: 3}

@@ -7063,7 +7063,7 @@ PrefabInstance:
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
       propertyPath: m_ButtonLabel
-      value: Sine
+      value: "\u6b63\u5f26\u6ce2"
       objectReference: {fileID: 0}
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
@@ -7637,7 +7637,7 @@ PrefabInstance:
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
       propertyPath: m_ButtonLabel
-      value: Brightness
+      value: "\u4eae\u5ea6"
       objectReference: {fileID: 0}
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
@@ -8095,7 +8095,7 @@ PrefabInstance:
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
       propertyPath: m_ButtonLabel
-      value: Repeats
+      value: "\u91cd\u590d"
       objectReference: {fileID: 0}
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
@@ -8499,7 +8499,7 @@ PrefabInstance:
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
       propertyPath: m_ButtonLabel
-      value: Saturation
+      value: "\u9971\u548c"
       objectReference: {fileID: 0}
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
@@ -9075,7 +9075,7 @@ PrefabInstance:
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
       propertyPath: m_ButtonLabel
-      value: Noise
+      value: "\u566a\u97f3"
       objectReference: {fileID: 0}
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
@@ -9701,7 +9701,7 @@ PrefabInstance:
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
       propertyPath: m_ButtonLabel
-      value: Wallpaper Symmetry
+      value: "\u7eb8\u5bf9\u79f0"
       objectReference: {fileID: 0}
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
@@ -9913,7 +9913,7 @@ PrefabInstance:
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
       propertyPath: m_ButtonLabel
-      value: Sawtooth
+      value: "\u952f\u9f7f\u6ce2"
       objectReference: {fileID: 0}
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
@@ -10135,7 +10135,7 @@ PrefabInstance:
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
       propertyPath: m_ButtonLabel
-      value: Options
+      value: "\u9009\u9879"
       objectReference: {fileID: 0}
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
@@ -10347,7 +10347,7 @@ PrefabInstance:
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
       propertyPath: m_ButtonLabel
-      value: EachAfter
+      value: "\u6bcf\u4e00\u4e2a\u4e4b\u540e"
       objectReference: {fileID: 0}
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
@@ -10549,7 +10549,7 @@ PrefabInstance:
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
       propertyPath: m_ButtonLabel
-      value: Point Symmetry
+      value: "\u70b9\u5bf9\u79f0"
       objectReference: {fileID: 0}
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
@@ -10761,7 +10761,7 @@ PrefabInstance:
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
       propertyPath: m_ButtonLabel
-      value: Hue
+      value: "\u8272\u8c03"
       objectReference: {fileID: 0}
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
@@ -10973,7 +10973,7 @@ PrefabInstance:
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
       propertyPath: m_ButtonLabel
-      value: Square
+      value: "\u65b9\u6ce2"
       objectReference: {fileID: 0}
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
@@ -11195,7 +11195,7 @@ PrefabInstance:
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
       propertyPath: m_ButtonLabel
-      value: Position
+      value: "\u4f4d\u7f6e"
       objectReference: {fileID: 0}
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
@@ -11749,7 +11749,7 @@ PrefabInstance:
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
       propertyPath: m_ButtonLabel
-      value: Scale
+      value: "\u89c4\u6a21"
       objectReference: {fileID: 0}
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
@@ -12320,7 +12320,7 @@ PrefabInstance:
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
       propertyPath: m_ButtonLabel
-      value: Rotation
+      value: "\u65cb\u8f6c"
       objectReference: {fileID: 0}
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
@@ -12522,7 +12522,7 @@ PrefabInstance:
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
       propertyPath: m_ButtonLabel
-      value: Skew
+      value: "\u659c"
       objectReference: {fileID: 0}
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
@@ -12734,7 +12734,7 @@ PrefabInstance:
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
       propertyPath: m_ButtonLabel
-      value: Triangle
+      value: "\u4e09\u89d2\u6ce2"
       objectReference: {fileID: 0}
     - target: {fileID: 2323353000080118199, guid: bb51b0dc7d0840f4ca79f5cbee2db4f9,
         type: 3}
