@@ -944,7 +944,7 @@ namespace TiltBrush
                     new GroupStrokesAndWidgetsCommand(m_SelectedStrokes, m_SelectedWidgets, targetGroup: targetGroup));
 
                 OutputWindowScript.m_Instance.CreateInfoCardAtController(
-                    InputManager.ControllerName.Brush, selectionIsInOneGroup ? "Ungrouped!" : "Grouped!");
+                    InputManager.ControllerName.Brush, selectionIsInOneGroup ? "未分组!" : "已分组!");
             }
             var pos = InputManager.m_Instance.GetControllerPosition(InputManager.ControllerName.Brush);
             AudioManager.m_Instance.PlayGroupedSound(pos);
