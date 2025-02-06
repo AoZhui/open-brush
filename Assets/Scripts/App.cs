@@ -1271,7 +1271,7 @@ namespace TiltBrush
             else
             {
                 OutputWindowScript.m_Instance.AddNewLine(
-                    OutputWindowScript.LineType.Special, " ");
+                    OutputWindowScript.LineType.Special, "草图加载完成!");
             }
 
             OnPlaybackComplete();
@@ -1322,7 +1322,7 @@ namespace TiltBrush
             }
 
             OutputWindowScript.m_Instance.CreateInfoCardAtController(
-                InputManager.ControllerName.Brush, "  ");
+                InputManager.ControllerName.Brush, "草图加载完成!");
         }
 
         void SwitchState()
