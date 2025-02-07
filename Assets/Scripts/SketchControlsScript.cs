@@ -27,7 +27,7 @@ namespace TiltBrush
 
     public class SketchControlsScript : MonoBehaviour
     {
-        public const string kRemoveHeadsetFyi = "Remove headset to view.";
+        public const string kRemoveHeadsetFyi = "取下设备观看";
         const string kTiltBrushGalleryUrl = "https://poly.google.com/tiltbrush";
         const string kBlocksGalleryUrl = "https://poly.google.com/blocks";
         const string kPolyMainPageUri = "https://poly.google.com";
