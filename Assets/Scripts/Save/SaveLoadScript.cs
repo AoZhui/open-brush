@@ -495,12 +495,29 @@ namespace TiltBrush
                 // is tracked.
                 if (newFile)
                 {
-                    OutputWindowScript.ReportFileSaved("未完成!！", info.FullPath,
-                        OutputWindowScript.InfoCardSpawnPos.Brush);
+                    // 创建一个字符串数组，存储同义词  
+                    string[] synonyms = new string[]
+                   {
+        "结束",
+        "OK",
+        "实现",
+        "完成",
+        "达成",
+        "截图保存完成!"
+                   };
+
+                    // 生成一个随机索引  
+                    int randomIndex = UnityEngine.Random.Range(0, synonyms.Length);
+                    // 根据随机索引选择一个同义词  
+                    string a = synonyms[randomIndex];
+
+
+                    OutputWindowScript.ReportFileSaved(a, info.FullPath,
+                                    OutputWindowScript.InfoCardSpawnPos.Brush);
                 }
                 else
                 {
-                    OutputWindowScript.ReportFileSaved("完成!", info.FullPath,
+                    OutputWindowScript.ReportFileSaved("完成", info.FullPath,
                         OutputWindowScript.InfoCardSpawnPos.UIReticle);
                     AudioManager.m_Instance.PlaySaveSound(
                         InputManager.m_Instance.GetControllerPosition(InputManager.ControllerName.Brush));
