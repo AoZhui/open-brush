@@ -516,9 +516,7 @@ namespace TiltBrush
             else
             {
 #if !UNITY_ANDROID
-                //OutputWindowScript.Error(
-                    InputManager.ControllerName.Wand,
-                    "±£´æµ½²ÝÍ¼Ê§°Ü", error);
+                //OutputWindowScript.Error(InputManager.ControllerName.Wand, "±£´æµ½²ÝÍ¼Ê§°Ü", error);
 #endif
             }
         }
