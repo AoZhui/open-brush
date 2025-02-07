@@ -37,7 +37,7 @@ namespace TiltBrush
         protected string m_CurrentImagesDirectory;
         public string CurrentImagesDirectory => m_CurrentImagesDirectory;
 
-        protected List<ReferenceImage> m_Images;
+        protected List<ReferenceImage> m_Images = new List<ReferenceImage>();
         protected Stack<int> m_RequestedLoads; // it's okay if this contains duplicates
         private bool m_DirNeedsProcessing;
         private string m_ChangedFile;
