@@ -141,7 +141,7 @@ jobs:
           # We want to use the base name for pushes of tags or to main, the PR number for PRs, and the branch name for named branches.
           if [[ "$PRERELEASE" == "false" || ${{ github.ref }} == refs/heads/main ]]
           then
-            echo "basename=OpenBrush" >> $GITHUB_OUTPUT
+            echo "basename=LingLongBi" >> $GITHUB_OUTPUT
             echo "description=" >> $GITHUB_OUTPUT
           else
             if [[ ${{ github.ref }} == refs/pull/* ]]
