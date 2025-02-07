@@ -14,7 +14,6 @@
 
 using UnityEngine;
 using TMPro;
-using UnityEngine.UI;
 
 namespace TiltBrush
 {
@@ -81,7 +80,7 @@ namespace TiltBrush
 
         public void Init(string sText, float fPopScalar = 1.0f)
         {
-            transform.Find("Canvas/Text_CN").GetComponent<Text>().text = sText;
+            transform.Find("Canvas/Text_CN").GetComponent<TextMeshProUGUI>().text = sText;
 
             m_Text.text = sText;
 
