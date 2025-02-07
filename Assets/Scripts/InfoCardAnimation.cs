@@ -80,8 +80,6 @@ namespace TiltBrush
 
         public void Init(string sText, float fPopScalar = 1.0f)
         {
-            transform.Find("Canvas/Text_CN").GetComponent<TextMeshProUGUI>().text = sText;
-
             m_Text.text = sText;
 
             // Measure length of button description by getting render bounds when mesh is axis-aligned.
