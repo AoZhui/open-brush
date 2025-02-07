@@ -496,15 +496,16 @@ namespace TiltBrush
                 if (newFile)
                 {
 #if !UNITY_ANDROID
-
-                    OutputWindowScript.ReportFileSaved("添加到草图册！", info.FullPath,
+                    //添加到草图册！
+                    OutputWindowScript.ReportFileSaved("保存!", info.FullPath,
                         OutputWindowScript.InfoCardSpawnPos.Brush);
 #endif
                 }
                 else
                 {
 #if !UNITY_ANDROID
-                    OutputWindowScript.ReportFileSaved("保存完成!", info.FullPath,
+                    //保存完成!
+                    OutputWindowScript.ReportFileSaved("保存!", info.FullPath,
                         OutputWindowScript.InfoCardSpawnPos.UIReticle);
 #endif
                     AudioManager.m_Instance.PlaySaveSound(
@@ -515,7 +516,7 @@ namespace TiltBrush
             else
             {
 #if !UNITY_ANDROID
-                OutputWindowScript.Error(
+                //OutputWindowScript.Error(
                     InputManager.ControllerName.Wand,
                     "保存到草图失败", error);
 #endif
