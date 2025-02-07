@@ -1270,8 +1270,8 @@ namespace TiltBrush
             }
             else
             {
-                OutputWindowScript.m_Instance.AddNewLine(
-                    OutputWindowScript.LineType.Special, "草图加载完成!");
+                //OutputWindowScript.m_Instance.AddNewLine(
+                //    OutputWindowScript.LineType.Special, "草图加载完成!");
             }
 
             OnPlaybackComplete();
@@ -1321,8 +1321,8 @@ namespace TiltBrush
                 yield return null;
             }
 
-            OutputWindowScript.m_Instance.CreateInfoCardAtController(
-                InputManager.ControllerName.Brush, "草图加载完成!");
+            //OutputWindowScript.m_Instance.CreateInfoCardAtController(
+            //    InputManager.ControllerName.Brush, "草图加载完成!");
         }
 
         void SwitchState()

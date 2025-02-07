@@ -495,13 +495,13 @@ namespace TiltBrush
                 // is tracked.
                 if (newFile)
                 {
-                    OutputWindowScript.ReportFileSaved("添加到草图册！", info.FullPath,
-                        OutputWindowScript.InfoCardSpawnPos.Brush);
+                    //OutputWindowScript.ReportFileSaved("添加到草图册！", info.FullPath,
+                    //    OutputWindowScript.InfoCardSpawnPos.Brush);
                 }
                 else
                 {
-                    OutputWindowScript.ReportFileSaved("保存完成!", info.FullPath,
-                        OutputWindowScript.InfoCardSpawnPos.UIReticle);
+                    //OutputWindowScript.ReportFileSaved("保存完成!", info.FullPath,
+                    //    OutputWindowScript.InfoCardSpawnPos.UIReticle);
                     AudioManager.m_Instance.PlaySaveSound(
                         InputManager.m_Instance.GetControllerPosition(InputManager.ControllerName.Brush));
                 }
@@ -509,9 +509,9 @@ namespace TiltBrush
             }
             else
             {
-                OutputWindowScript.Error(
-                    InputManager.ControllerName.Wand,
-                    "保存到草图失败", error);
+                //OutputWindowScript.Error(
+                //    InputManager.ControllerName.Wand,
+                //    "保存到草图失败", error);
             }
         }
 
