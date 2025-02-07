@@ -481,10 +481,10 @@ namespace TiltBrush
                 str += $" build {Config.m_BuildStamp}";
 
 #if UNITY_ANDROID
-            str += $" code {AndroidUtils.GetVersionCode()}";
+            str += $" ´úºÅ£º {AndroidUtils.GetVersionCode()}";
 #endif
 #if DEBUG
-            str += $" {PlatformConfig.name}";
+            str += $" Æ½Ì¨£º{PlatformConfig.name}";
 #endif
             return str;
         }

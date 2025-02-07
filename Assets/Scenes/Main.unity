@@ -29420,7 +29420,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1757889434}
-  m_Text: Info
+  m_Text: "\u4FE1\u606F"
   m_OffsetZ: 0
   m_CharacterSize: 0.03
   m_LineSpacing: 1
