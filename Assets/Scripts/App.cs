@@ -1270,11 +1270,9 @@ namespace TiltBrush
             }
             else
             {
-#if !UNITY_ANDROID
 
                 OutputWindowScript.m_Instance.AddNewLine(
                     OutputWindowScript.LineType.Special, "草图加载完成!");
-#endif
             }
 
             OnPlaybackComplete();
@@ -1323,11 +1321,9 @@ namespace TiltBrush
                 stall -= Time.deltaTime;
                 yield return null;
             }
-#if !UNITY_ANDROID
 
             OutputWindowScript.m_Instance.CreateInfoCardAtController(
                 InputManager.ControllerName.Brush, "草图加载完成!");
-#endif
 
         }
 

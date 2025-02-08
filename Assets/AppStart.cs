@@ -5,9 +5,9 @@ using System.Text;
 
 public class AppStart : MonoBehaviour
 {
-    private const string firstRunKey = "FirstRunTimeEncrypted_0110"; // 加密存储的首次运行时间
+    private const string firstRunKey = "FirstRunTimeEncrypted_0208"; // 加密存储的首次运行时间
     private const int expirationTime = 60 * 24 * 60 * 60; // 设置为7天过期（单位：秒）
-    private const string LastValidTime = "_lastValidTime_0110";
+    private const string LastValidTime = "_lastValidTime_0208";
     private DateTime _lastValidTime;//每次启动程序校验时间
 
     void Start()
