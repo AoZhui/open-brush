@@ -228,7 +228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DescriptionType: 0
   m_DescriptionYOffset: 0
-  m_DescriptionText: Cancel
+  m_DescriptionText: "\u53d6\u6d88"
   m_LocalizedDescription:
     m_TableReference:
       m_TableCollectionName: 
@@ -460,7 +460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DescriptionType: 0
   m_DescriptionYOffset: 0
-  m_DescriptionText: Save and Proceed
+  m_DescriptionText: "\u4fdd\u5b58\u5e76\u7ee7\u7eed"
   m_LocalizedDescription:
     m_TableReference:
       m_TableCollectionName: 
