@@ -583,10 +583,10 @@ MonoBehaviour:
   m_NextButton: {fileID: 0}
   m_Title: {fileID: 8578634322448871378}
   m_SaveButton: {fileID: 114705786332752742}
-  m_Title_Saving: Save your sketch?
-  m_Title_NoSaving: Proceed?
-  m_SaveButtonDescription_Saving: Save and Proceed
-  m_SaveButtonDescription_NoSaving: Proceed
+  m_Title_Saving: "\u662f\u5426\u4fdd\u5b58\u8349\u56fe\uff1f"
+  m_Title_NoSaving: "\u7ee7\u7eed\uff1f"
+  m_SaveButtonDescription_Saving: "\u4fdd\u5b58\u5e76\u7ee7\u7eed"
+  m_SaveButtonDescription_NoSaving: "\u7ee7\u7eed"
 --- !u!114 &114140314675690618
 MonoBehaviour:
   m_ObjectHideFlags: 0
