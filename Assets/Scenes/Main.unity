@@ -23330,7 +23330,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u5B8C\u6210"
+  m_text: "\u5B8C\u6210 \u4FDD\u5B58 \u652F\u79BB\u7834\u788E"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 738c59f4a830dd84fa32d73e94af271d, type: 2}
   m_sharedMaterial: {fileID: 1804176956508793965, guid: 738c59f4a830dd84fa32d73e94af271d,
