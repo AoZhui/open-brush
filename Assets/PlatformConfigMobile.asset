@@ -21,7 +21,7 @@ MonoBehaviour:
   UseFileSystemWatcher: 1
   EnableAutosave: 0
   QuickLoadMaxDistancePerFrame: 4
-  IntroSketchPrefab: {fileID: 1843608203, guid: f9e36942d6b3ed84ba2b8b6e21505c95,
+  IntroSketchPrefab: {fileID: 3143269980148307037, guid: 1dff54da30fd3e64b9d66fc4847b9ba5,
     type: 3}
   EnablePolyPreload: 0
   AvoidUploadHandlerFile: 0

@@ -169,20 +169,20 @@ namespace TiltBrush
 
         private Dictionary<Color32, string> m_SecretColors = new Dictionary<Color32, string>
         {
-            { new Color32(27, 15, 253, 255), "Patrick's Favorite Color" },
-            { new Color32(72, 9, 12, 255), "Mach's Favorite Color" },
-            { new Color32(126, 71, 143, 255), "Joyce's Favorite Color" },
-            { new Color32(66, 113, 120, 255), "Tim's Favorite Color" },
-            { new Color32(14, 81, 53, 255), "Drew's Favorite Color" },
-            { new Color32(255, 220, 202, 255), "Jeremy's Favorite Color" },
-            { new Color32(16, 100, 173, 255), "Elisabeth's Favorite Color" },
-            { new Color32(217, 255, 109, 255), "Ashley's Favorite Color" },
-            { new Color32(255, 241, 27, 255), "Tory's Favorite Color" },
-            { new Color32(29, 59, 93, 255), "Paul's Favorite Color" },
-            { new Color32(238, 70, 153, 255), "Izzy's Favorite Color" },
-            { new Color32(255, 127, 80, 255), "Jon's Favorite Color" },
-            { new Color32(176, 25, 126, 255), "Gottlieb's Favorite Color" },
-            { new Color32(11, 28, 92, 255), "Coco's Favorite Color" },
+            { new Color32(27, 15, 253, 255), "最爱的颜色" },
+            { new Color32(72, 9, 12, 255), "最爱的颜色" },
+            { new Color32(126, 71, 143, 255), "最爱的颜色" },
+            { new Color32(66, 113, 120, 255), "最爱的颜色" },
+            { new Color32(14, 81, 53, 255), "最爱的颜色" },
+            { new Color32(255, 220, 202, 255), "最爱的颜色" },
+            { new Color32(16, 100, 173, 255), "最爱的颜色" },
+            { new Color32(217, 255, 109, 255), "最爱的颜色" },
+            { new Color32(255, 241, 27, 255), "最爱的颜色" },
+            { new Color32(29, 59, 93, 255), "最爱的颜色" },
+            { new Color32(238, 70, 153, 255), "最爱的颜色" },
+            { new Color32(255, 127, 80, 255), "最爱的颜色" },
+            { new Color32(176, 25, 126, 255), "最爱的颜色" },
+            { new Color32(11, 28, 92, 255), "最爱的颜色" },
         };
 
         public static ColorTable m_Instance;
